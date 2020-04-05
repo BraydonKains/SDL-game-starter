@@ -1,3 +1,6 @@
+#ifndef Start_screen_h
+#define Start_screen_h
+
 #include <SDL2/SDL.h>
 #include "screen.h"
 
@@ -6,7 +9,10 @@ public:
 	StartScreen(SDL_Renderer* _renderer);
 
 	void run();
-	void redraw();
+	void render();
+	void eventHandler();
 private:
 	SDL_Renderer* renderer;
 };
+
+#endif
